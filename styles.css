@@ -1,0 +1,17 @@
+ul li a.lead {
+    color: orange;
+  }
+
+
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #fff;
+        background-color: #357EBD;
+        background-image: linear-gradient(to bottom, #428BCA 0, #357EBD 100%);
+    }
+}
+
+

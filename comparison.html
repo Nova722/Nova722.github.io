@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mass Shootings in the US</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sandstone/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-G3Fme2BM4boCE9tHx9zHvcxaQoAkksPQa/8oyn1Dzqv7gdcXChereUsXGx6LtbqA" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                        Visualizations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="mass_shooting_rates.html">Mass Shootings Over Time</a>
+                        <a class="dropdown-item" href="victims.html">Mass Shooting Victims Over Time</a>
+                        <a class="dropdown-item" href="percapita.html"> Mass Shooting Per Capita Rates</a>
+                        <a class="dropdown-item" href="hategroup.html"> Hate Groups</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="comparison.html">comparisons <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="data.html">data <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-4 ">
+                <img class = "comparison" src="images\count_over_time.png" alt="Mass Shootings Over Time">
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4">
+                <img class = "comparison" src="images\victims.png" alt="Mass Shooting Victims Over Time" />
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4">
+                <p class="middle" >Mass shootings increased from 2014-2016 and decreased from 2016-2017. However, the
+                    number of
+                    victims of mass shootings increased from 2016-2017 indicating mass shootings that year were more
+                    deadly.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <img class = "long_comparison2"  src="images\count_by_state.png" ,
+                    alt="Count by state">
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <img class = "long_comparison3" src="images\per_capita.png" ,
+                    alt="Per Capita By State" />
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <p class="middle">When comparing mass shooting counts states with large urban centers such as
+                    California, Illinois and Florida
+                    have the most mass shootings. When taking population into account we can see that the per capita
+                    mass shooting visualization
+                    paints a different picture with many states in the south such as Louisiana, Tennessee and Missiouri
+                    come out with higher mass
+                    shooting rates per capita.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+                <img class = "long_comparison1" src="images\hate_group.png" , alt="Hate Groups by state">
+            </div>
+
+            <div class="col-md-4">
+                <p class = "middle" >The number of hate groups has consistently increased from 2014 - 2017. There is a
+                    positive linear correlation between States with 1 or more mass shooting and the number hate groups
+                    in a given state as seen from our regression.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
